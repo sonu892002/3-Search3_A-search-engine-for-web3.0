@@ -9,9 +9,9 @@ app.use(cors())
 app.get('/:id', (req, res) => {
   const id = req.params.id
   async function search3() {
-    const browser = await puppeteer.launch({ headless: false })
+    const browser = await puppeteer.launch({ headless: true })
     const page = await browser.newPage()
-    await page.goto(`https://www.google.com/search?q=${id}&num=2&gl=usa`, {
+    await page.goto(`https://www.google.com/search?q=${id}&num=10&gl=usa`, {
       waitUntil: 'domcontentloaded',
     })
 

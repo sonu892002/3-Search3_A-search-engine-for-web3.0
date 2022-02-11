@@ -1,6 +1,6 @@
 import './App.css'
 import axios from 'axios'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 function App() {
   const [search, setsearch] = useState('')
@@ -57,7 +57,8 @@ function App() {
             <div className="iih">
               This is the worlds first web-3 search engine.<br></br> Search3 is
               the gateway to the web 3.0 internet. <br />
-              Search your web 3 related queries here.
+              Search your web 3 related queries here.<br></br>
+              --SOURADEEP KUNDU
             </div>
           </div>
         </div>
